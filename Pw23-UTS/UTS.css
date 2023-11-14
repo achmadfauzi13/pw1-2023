@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(red.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+input [type=radio]{
+    padding: 20px 50px ;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+input[type=text], select{
+    width: 100%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0 1);
+    padding: 12px 20px;
+    margin: 8px 0px;
+    border:1px solid ;
+    background-color: white ;
+    border-radius: 5px;
+}
+form input[type="radio"]{
+    margin-left: 100px;
+    margin-right: 5px;
+    
+}
+form input[type="date"]
+{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius:5px;
+    border: 1px solid ;
+    background-color: white;
+    color: black;
+}
+input[type="submit"]{
+    width: 20%;
+    background-color: crimson;
+    color: white;
+    padding: 10px 10px;
+    margin: 5px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+background-color: black;
+transition: 700ms;
+transform: scale(1.15)
+}
+.container{
+    width: 500px;
+    padding: 20px;
+}
+.form{
+    grid-template-columns: auto auto auto;
+    margin: 100px auto;
+    width:500px ;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 1px 10px black;
+}
+form h1{
+    text-align: center;
+}
