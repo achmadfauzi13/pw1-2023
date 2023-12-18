@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic JS</title>
+</head>
+<body>
+        <!--Html Code-->
+        <p id="fullname"></p>
+
+        <input type="number" id="age">
+        <button onclick="getStatus()">Check</button>
+
+        <p id="status"></p>
+        <script>
+        let dinoName = 'Tritera';
+
+        // let dinoAge = 500 ;
+        // let isMarried = false;
+        // console.log(dinoName);
+        // console.log(dinoAge);
+        // console.log(isMarried);
+
+        document.getElementById("fullname").innerHTML = `Dino Name : ${dinoName}`;
+        function getStatus(){
+                let dinoAge = document.getElementById("age").value;
+            if (dinoAge < 850){
+                return document.getElementById("status").innerHTML = "Masih Muda";
+            } 
+            else {
+                return document.getElementById("status").innerHTML = "Cukup Umur";
+            }
+        }
+        // cara mudah untuk memanggil fungsi
+        // document.write(`Dino Name : ${dinoName} Dino Age : ${dinoAge} isMarried : ${isMarried}`);
+
+        // cara rumit untuk memanggil fungsi
+        // document.write("Dino Name : " + dinoName + ", " + "Dino Age : " + dinoAge +", "+ "isMarried : " + isMarried);
+    </script>
+</body>
+</html>
